@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela</title>
     <style>
-        body {
+       body {
             font-family: Arial, Helvetica, sans-serif;
             text-align: center;
             font-weight: bold;
@@ -13,43 +13,96 @@
 
         table {
             border-collapse: collapse;
-            width: 400px;
+            width: 800px;
+            margin: 20px;
         }
 
-        td {
+        th, td {
             border: 1px solid black;
+            padding: 10px;
+            text-align: center;
         }
+
+        th {
+
+        }
+
+         .media {
+            text-align: left;
+            background-color: rgb(128, 128, 128);
+            color: white;
+            font-weight: bold;
+        }
+
+            .cabecalho {
+                background-color: rgb(128, 128, 128);
+                color: white;
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+            .areas {
+                font-weight: bolder;
+            }
     </style>
 </head>
 <body>
     <table>
         <tr>
-            <td>Área</td>
+            <th rowspan="2" class="cabecalho">Área</th>
+            <th rowspan="2" class="cabecalho">Disciplinas</th>
+            <th colspan="2" class="cabecalho">Notas</th>
+            <th rowspan="2" class="cabecalho">Média</th>
         </tr>
         <tr>
-            <td rowspan="4">Exatas</td>
+            <th class="cabecalho">Notas 1</th>
+            <th class="cabecalho">Notas 2</th>
         </tr>
         <tr>
-            <td colspan="6">Média de Exatas</td>
-        </tr>
-        <tr>
-            <td>Humanas</td>
-        </tr>
-        <tr>
-            <td>Média de Humanas</td>
-        </tr>
-            <td>Diciplinas</td>
-            <td colspan="2">Notas</td>
-            <td>Nota 1</td>
-            <td>Nota 2</td>
-            <td>Média</td>
-        </tr>
-        <tr>
-            <td>Extras</td>
+            <td rowspan="4" class="areas">Exatas</td>
             <td>Matemática</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
             <td>Física</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
             <td>Química</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
             <td>Biologia</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td colspan="4" class="media">Média de Exatas</td>
+            <td class="cabecalho">0.0</td>
+        </tr>
+        <tr>
+            <td rowspan="2" class="areas">Humanas</td>
+            <td>História</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td>Geografia</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td colspan="4" class="media">Média de Humanas</td>
+            <td class="cabecalho">0.0</td>
         </tr>
     </table>
 </body>
